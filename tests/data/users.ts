@@ -9,6 +9,6 @@ export default {
   },
   invalid: {
     email: `browser-user-${uniqueSuffix}@example.test`,
-    password: "",
+    password: "short",
   },
 };
