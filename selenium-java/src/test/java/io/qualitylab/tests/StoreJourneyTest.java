@@ -28,7 +28,7 @@ final class StoreJourneyTest extends BaseTest {
                 .open(baseUrl)
                 .signInExpectingFailure(
                         "selenium-user-" + System.nanoTime() + "@example.test",
-                        "");
+                        "short");
         assertEquals("Email or password is incorrect", message);
     }
 }
