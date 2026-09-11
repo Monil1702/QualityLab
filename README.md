@@ -1,6 +1,6 @@
 # QualityLab Automation
 
-[![Quality Gates](https://github.com/Monil1702/qualitylab-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/Monil1702/qualitylab-automation/actions/workflows/ci.yml)
+[![Quality Gates](https://github.com/Monil1702/QualityLab/actions/workflows/ci.yml/badge.svg)](https://github.com/Monil1702/QualityLab/actions/workflows/ci.yml)
 [![Playwright](https://img.shields.io/badge/Playwright-TypeScript-2EAD33?logo=playwright)](https://playwright.dev/)
 [![Selenium](https://img.shields.io/badge/Selenium-Java-43B02A?logo=selenium&logoColor=white)](https://www.selenium.dev/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -38,8 +38,8 @@ The repository emphasizes business risk instead of maximizing raw test count. Se
 Prerequisites: Node.js 20+ and npm.
 
 ```bash
-git clone https://github.com/Monil1702/qualitylab-automation.git
-cd qualitylab-automation
+git clone https://github.com/Monil1702/QualityLab.git
+cd QualityLab
 npm ci
 npx playwright install
 npm test

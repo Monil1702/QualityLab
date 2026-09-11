@@ -1,0 +1,166 @@
+:root {
+  color-scheme: light;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #16202a;
+  background: #eef2f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem clamp(1rem, 5vw, 4rem);
+  color: white;
+  background: #12263a;
+}
+.brand {
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+.environment {
+  padding: 0.35rem 0.65rem;
+  border: 1px solid #8bb8df;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+main {
+  width: min(980px, calc(100% - 2rem));
+  margin: 3rem auto;
+}
+.panel,
+#store-panel {
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 16px 44px rgb(19 38 58 / 10%);
+}
+.panel {
+  max-width: 520px;
+  margin: auto;
+}
+.eyebrow {
+  color: #176b87;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+h1 {
+  margin-top: 0.25rem;
+  line-height: 1.15;
+}
+form {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+}
+label {
+  font-weight: 700;
+}
+input {
+  width: 100%;
+  border: 1px solid #9caab8;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font: inherit;
+}
+input:focus {
+  outline: 3px solid #7bdff2;
+  outline-offset: 1px;
+}
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font: inherit;
+  font-weight: 800;
+  color: white;
+  background: #176b87;
+  cursor: pointer;
+}
+button:hover {
+  background: #104f64;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.error {
+  min-height: 1.5rem;
+  color: #a61b1b;
+}
+.hidden {
+  display: none;
+}
+.store-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+}
+.cart {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: #e7f5f8;
+  white-space: nowrap;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #d5dee7;
+  border-radius: 12px;
+}
+.product h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.product .category {
+  color: #536575;
+}
+.product button {
+  margin-top: auto;
+}
+.price {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.checkout {
+  width: 100%;
+  background: #16794b;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-top: 1.25rem;
+  }
+  .store-heading {
+    display: block;
+  }
+  .cart {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QualityLab Store</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="/">QualityLab Store</a>
+      <span class="environment">Test Environment</span>
+    </header>
+    <main>
+      <section id="login-panel" class="panel" aria-labelledby="login-title">
+        <p class="eyebrow">Automation fixture</p>
+        <h1 id="login-title">Sign in to the demo store</h1>
+        <p>
+          Use the seeded test account to exercise stable UI and API workflows.
+        </p>
+        <form id="login-form">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="username"
+            required
+          />
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            required
+          />
+          <button type="submit">Sign in</button>
+          <p id="login-error" class="error" role="alert" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section id="store-panel" class="hidden" aria-labelledby="store-title">
+        <div class="store-heading">
+          <div>
+            <p class="eyebrow">Product catalogue</p>
+            <h1 id="store-title">Find your workspace essentials</h1>
+          </div>
+          <div class="cart" aria-live="polite">
+            Cart: <strong id="cart-count">0</strong>
+          </div>
+        </div>
+        <label for="search">Search products</label>
+        <input id="search" type="search" placeholder="Try keyboard or audio" />
+        <p id="catalog-status" role="status" aria-live="polite"></p>
+        <div id="products" class="products"></div>
+        <button id="checkout" class="checkout" type="button" disabled>
+          Place order
+        </button>
+        <p id="order-status" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

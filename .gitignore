@@ -1,0 +1,9 @@
+node_modules/
+playwright-report/
+test-results/
+reports/
+dist/
+.env
+.DS_Store
+selenium-java/target/
+

@@ -1,0 +1,38 @@
+{
+  "name": "qualitylab-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio-grade web, API, accessibility, resilience, performance, and Selenium automation",
+  "type": "module",
+  "scripts": {
+    "app": "npm run build:app --silent && node dist/server.js",
+    "build:app": "tsc --project tsconfig.app.json",
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:api": "playwright test tests/api",
+    "test:e2e": "playwright test tests/e2e",
+    "test:a11y": "playwright test tests/accessibility",
+    "test:headed": "playwright test --headed --project=chromium",
+    "test:debug": "playwright test --debug --project=chromium",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "5.2.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.62.1",
+    "@types/express": "5.0.6",
+    "@types/node": "24.10.0",
+    "ajv": "8.20.0",
+    "prettier": "3.9.6",
+    "typescript": "7.0.2",
+    "wait-on": "9.1.0"
+  }
+}
